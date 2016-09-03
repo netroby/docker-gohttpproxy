@@ -8,4 +8,4 @@ RUN apk update ; \
         rm -rf /opt/go ;\
         rm -rf /usr/lib/go;
 
-CMD ["gohttpproxy", "0.0.0.0", "8123"]
+CMD ["gohttpproxy", "--addr", ":8123"]
